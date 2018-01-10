@@ -1,0 +1,22 @@
+<div class="form-group">
+							<label for="exampleInputEmail2">
+								Password Baru
+							</label>
+							<input type="text" name='passwordbaru' class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail2">
+								Konfirmasi Password Baru <small class="responsepass text-danger"></small>
+							</label>
+							<script type="text/javascript">
+								function ceksama(confirm,selectorpassword){
+									var pass = $("[name='"+selectorpassword+"']");
+									if(pass.val() != confirm){
+										$(".responsepass").html("Password Tidak Sama!");		
+									}else{
+										$(".responsepass").html("");
+									}
+								}
+							</script>
+							<input type="text" name='confirmpasswordbaru' onkeyup="ceksama($(this).val(),'passwordbaru')" class="form-control" />
+						</div>
