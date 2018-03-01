@@ -13,8 +13,12 @@
 			var ubahtampilan = function(){
 				// $("body").html("oops");		
 			}
+			if(location.hostname == "NAMA_DOMAIN"){ //mencek apakah selector ada, jika ga ada dia langsung ngubah tampilan
+				
+				ubahtampilan();
+			}
 			if(cpr.length == 0){ //mencek apakah selector ada, jika ga ada dia langsung ngubah tampilan
-			$("body").html("oops");		
+				
 				ubahtampilan();
 			}else{
 				if(cpr.html().indexOf("Smart Solution (PT. Aisy Tekno Indonesia)") != -1){
@@ -23,15 +27,15 @@
 						//mencek apakah ada yang nyembunyiin div/ kata2 copyright di atas/parentnya selector jika ga ada lanjut filter ke bawah
 						if(cpr.find(":hidden").length != 0){
 							//mencek apakah ada yang nyembunyiin div/ kata2 copyright di bawah/childnya selector jika ada 
-							$("body").html("oops1");		
+								
 							ubahtampilan();	
 						}
 					}else{
-						$("body").html("o2ops");		
+								
 						ubahtampilan();
 					}
 				}else{
-					$("body").html("oop33s");		
+						
 					ubahtampilan();
 				}
 			}
