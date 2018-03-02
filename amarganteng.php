@@ -13,7 +13,7 @@
 			var ubahtampilan = function(){
 				// $("body").html("oops");		
 			}
-			if(location.hostname == "NAMA_DOMAIN"){ //mencek apakah selector ada, jika ga ada dia langsung ngubah tampilan
+			if(location.hostname != "NAMA_DOMAIN" && location.hostname != "WWW.NAMA_DOMAIN"){ //mencek apakah selector ada, jika ga ada dia langsung ngubah tampilan
 				
 				ubahtampilan();
 			}
